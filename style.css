@@ -1,0 +1,116 @@
+* {
+  touch-action: manipulation;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #001b23;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: url('cursor1.png'), auto;
+}
+
+#main-interface {
+  height: 30%;
+  width: 500px;
+  max-width: 90%;
+  background-image: url('bg-interface.png');
+  background-size: cover;
+  background-position: bottom;
+  cursor: url('cursor1.png'), auto;
+  position: absolute;
+  top: 0;
+}
+
+#main-container {
+  height: 100%;
+  width: 400px;
+  max-width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: url('cursor1.png'), auto;
+  border: #006484 3px solid;
+}
+
+/* 
+@media screen and (max-width: 600px) {
+  #main-container {
+    height: 60vh;
+    width: 90vw;
+    }
+} */
+
+#interface {
+  top: 0;
+  padding: 10px;
+  z-index: 1;
+  background-image: url('bg-interface.png');
+  background-size: cover;
+  background-position: bottom;
+  cursor: url('cursor1.png'), auto;
+}
+
+button {
+  cursor: url('cursor2.png'), auto;
+  background-color: transparent;
+  border: none;
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+}
+
+#btn-activate {
+  background-image: url('btn1.png');
+  transition: all .2s ease-in-out;
+  top: 15%;
+  left: 5%;
+  position: absolute;
+}
+
+#btn-activate:hover {
+  transform: scale(1.1);
+}
+
+#btn-add {
+  background-image: url('btn3.png');
+  transition: all .2s ease-in-out;
+  top: 35%;
+  left: 50%;
+  position: absolute;
+}
+
+#btn-add:hover {
+  transform: scale(1.1);
+}
+
+#btn-delete {
+  background-image: url('btn4.png');
+  transition: all .2s ease-in-out;
+  top: 50%;
+  left: 80%;
+  position: absolute;
+}
+
+#btn-delete:hover {
+  transform: scale(1.1);
+}
+
+#btn-stroke {
+  background-image: url('btn2.png');
+  transition: all .2s ease-in-out;
+  top: 40%;
+  left: 30%;
+  position: absolute;
+}
+
+#btn-stroke:hover {
+  transform: scale(1.1);
+}
